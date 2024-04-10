@@ -1,35 +1,23 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  @vite('resources/css/app.css')
-</head>
-<body>
-<x-nav>
-</x-nav>
+<x-layout>
 
+    <x-hero>
+    </x-hero>
 
+    <x-feature>
+    </x-feature>
 
-<x-hero>
-</x-hero>
+    {{-- Products --}}
+    <x-recent>
+    </x-recent>
 
-<x-feature>
-</x-feature>
+    <div class="icontact flex flex-wrap md:justify-around my-5 sm:justify-center gap-3">
+        <x-Contact></x-Contact>
+        <x-image></x-image>
+    </div>
 
-<x-recent>
-</x-recent>
+    <div id="map-container" class="mt-6 mb-6 flex w-full justify-center">
+        <x-map>
+        </x-map>
+    </div>
 
-<div class="icontact">
-    <x-Contact></x-Contact>
-    <x-image></x-image>
-</div>
-
-<x-map>
-</x-map>
-
-<x-footer>
-</x-footer>
-
-</body>
-</html>
+</x-layout>
